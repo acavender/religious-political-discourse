@@ -21,9 +21,7 @@
 title: Religious Political Discourse
 email: acavende+rpd@saintmarys.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A site to house a research project about — you guessed it — religious political discourse. The site will be built out slowly as the project progresses.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://relpoldiscourse.amycavender.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: acavender
@@ -33,6 +31,11 @@ github_username:  acavender
 theme: jekyll-theme-hydejack
 plugins:
   - jekyll-feed
+
+# Customizations
+accent_image: /assets/img/blue-water.jpg
+accent_color: rgb(2, 81, 122)
+theme_color: rgb(2, 81, 122)
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -58,3 +61,12 @@ plugins:
 menu:
   - title: About
     url:   /about/
+
+# Add collections and tags
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
